@@ -46,7 +46,7 @@ npx skills add psylch/zlib-download-skill -g -y
 
 ```bash
 mkdir -p ~/.claude/book-tools
-cp ~/.agents/skills/book-tools/scripts/.env.example ~/.claude/book-tools/.env
+cp ~/.agents/skills/zlib-download/scripts/.env.example ~/.claude/book-tools/.env
 ```
 
 编辑 `~/.claude/book-tools/.env`，填入你的 Z-Library 邮箱和密码：
@@ -61,7 +61,7 @@ ZLIB_PASSWORD=your_password_here
 ### 2.（可选）安装 Anna's Archive
 
 ```bash
-bash ~/.agents/skills/book-tools/scripts/setup.sh install-annas
+bash ~/.agents/skills/zlib-download/scripts/setup.sh install-annas
 ```
 
 然后在 `.env` 中添加 API key（通过向 Anna's Archive 捐赠获取）：
@@ -73,7 +73,7 @@ ANNAS_SECRET_KEY=your_api_key_here
 ### 3. 验证
 
 ```bash
-python3 ~/.agents/skills/book-tools/scripts/book.py setup
+python3 ~/.agents/skills/zlib-download/scripts/book.py setup
 ```
 
 ## 使用方式
@@ -142,11 +142,11 @@ python3 book.py setup
 ## 文件结构
 
 ```
-zlib-search-skill/
+zlib-download-skill/
 ├── .claude-plugin/
 │   └── plugin.json                  # 插件清单
 ├── skills/
-│   └── book-tools/
+│   └── zlib-download/
 │       ├── SKILL.md                 # 主 skill 定义
 │       ├── scripts/
 │       │   ├── book.py              # 统一 CLI

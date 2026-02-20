@@ -46,7 +46,7 @@ Restart Claude Code after installation.
 
 ```bash
 mkdir -p ~/.claude/book-tools
-cp ~/.agents/skills/book-tools/scripts/.env.example ~/.claude/book-tools/.env
+cp ~/.agents/skills/zlib-download/scripts/.env.example ~/.claude/book-tools/.env
 ```
 
 Edit `~/.claude/book-tools/.env` with your Z-Library email and password:
@@ -61,7 +61,7 @@ ZLIB_PASSWORD=your_password_here
 ### 2. (Optional) Install Anna's Archive
 
 ```bash
-bash ~/.agents/skills/book-tools/scripts/setup.sh install-annas
+bash ~/.agents/skills/zlib-download/scripts/setup.sh install-annas
 ```
 
 Then add your API key (obtained via donation to Anna's Archive) to `.env`:
@@ -73,7 +73,7 @@ ANNAS_SECRET_KEY=your_api_key_here
 ### 3. Verify
 
 ```bash
-python3 ~/.agents/skills/book-tools/scripts/book.py setup
+python3 ~/.agents/skills/zlib-download/scripts/book.py setup
 ```
 
 ## Usage
@@ -142,11 +142,11 @@ On first successful Z-Library login, remix tokens are cached in `config.json` �
 ## File Structure
 
 ```
-zlib-search-skill/
+zlib-download-skill/
 ├── .claude-plugin/
 │   └── plugin.json                  # Plugin manifest
 ├── skills/
-│   └── book-tools/
+│   └── zlib-download/
 │       ├── SKILL.md                 # Main skill definition
 │       ├── scripts/
 │       │   ├── book.py              # Unified CLI wrapper
