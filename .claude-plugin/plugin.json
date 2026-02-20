@@ -1,5 +1,5 @@
 {
-  "name": "zlib-search-skill",
+  "name": "zlib-download-skill",
   "description": "Search and download books from Z-Library and Anna's Archive. Unified CLI for book discovery with multiple backends.",
   "author": {
     "name": "psylch",
