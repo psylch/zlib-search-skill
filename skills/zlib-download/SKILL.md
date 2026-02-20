@@ -1,5 +1,5 @@
 ---
-name: zlib-download-skill
+name: zlib-download
 description: Search and download books from Z-Library and Anna's Archive. Use when user wants to find, search, download, or look up books, papers, or ebooks. Trigger phrases include "find book", "search book", "download book", "找书", "下载书籍", "搜书", "book search", "zlibrary", "anna's archive".
 ---
 
