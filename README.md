@@ -1,4 +1,4 @@
-# zlib-search-skill
+# zlib-download-skill
 
 [中文文档](README.zh.md)
 
@@ -11,17 +11,25 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill for search
 
 ## Installation
 
-### Via skills.sh (recommended)
+### Install all media skills at once (recommended)
+
+This skill is part of [media-master](https://github.com/psylch/media-master), which bundles music, cloud drive, and book download skills:
 
 ```bash
-npx skills add psylch/zlib-search-skill -g -y
+npx skills add psylch/media-master -g -y
+```
+
+### Install this skill only
+
+```bash
+npx skills add psylch/zlib-download-skill -g -y
 ```
 
 ### Via Claude Code Plugin Marketplace
 
 ```shell
-/plugin marketplace add psylch/zlib-search-skill
-/plugin install zlib-search-skill@psylch-zlib-search-skill
+/plugin marketplace add psylch/zlib-download-skill
+/plugin install zlib-download@psylch-zlib-download-skill
 ```
 
 Restart Claude Code after installation.

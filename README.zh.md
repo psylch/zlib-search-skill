@@ -1,4 +1,4 @@
-# zlib-search-skill
+# zlib-download-skill
 
 [English](README.md)
 
@@ -11,17 +11,25 @@
 
 ## 安装
 
-### 通过 skills.sh 安装（推荐）
+### 一键安装全部媒体技能（推荐）
+
+本技能是 [media-master](https://github.com/psylch/media-master) 的一部分，可一次安装音乐、网盘资源、书籍三个下载技能：
 
 ```bash
-npx skills add psylch/zlib-search-skill -g -y
+npx skills add psylch/media-master -g -y
 ```
 
-### 通过 Claude Code Plugin Marketplace 安装
+### 仅安装本技能
+
+```bash
+npx skills add psylch/zlib-download-skill -g -y
+```
+
+### 通过 Claude Code Plugin Marketplace
 
 ```shell
-/plugin marketplace add psylch/zlib-search-skill
-/plugin install zlib-search-skill@psylch-zlib-search-skill
+/plugin marketplace add psylch/zlib-download-skill
+/plugin install zlib-download@psylch-zlib-download-skill
 ```
 
 安装后重启 Claude Code。
