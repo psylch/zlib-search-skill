@@ -61,7 +61,7 @@ ZLIB_PASSWORD=your_password_here
 Alternatively, credentials can be set via CLI (less recommended — visible in shell history):
 
 ```bash
-python3 ${SKILL_PATH}/scripts/book.py config set --zlib-email "user@mail.com" --zlib-password "password"
+python3 ${SKILL_PATH}/scripts/book.py config set --zlib-email "user@example.com" --zlib-password "password"
 ```
 
 ### Step 3: Verify
@@ -162,7 +162,7 @@ python3 ${SKILL_PATH}/scripts/book.py download --source annas --hash a1b2c3d4e5 
 {
   "source": "zlib",
   "status": "ok",
-  "path": "/Users/user/Downloads/Deep Learning (Ian Goodfellow).pdf",
+  "path": "~/Downloads/Deep Learning (Ian Goodfellow).pdf",
   "size": 23592960
 }
 ```
